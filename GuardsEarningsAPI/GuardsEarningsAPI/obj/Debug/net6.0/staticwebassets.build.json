@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ibrKG14LKMqlKmCLAFvMki4xOIIvS1qLFen2STopeEE=",
+  "Source": "GuardsEarningsAPI",
+  "BasePath": "_content/GuardsEarningsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "LqhCeF+B9YHDyrHTSgI7S2Gy90OidzE81UfMZL9WMr63XCBXCCmIbHHPk2dyX/DFgL98bMiO5BX/aYrNSmWCAw==",
+  "success": true,
+  "projectFilePath": "C:\\Diego\\proyectos\\Programación\\Proyectos FULLSTACK\\GuardsEarnings\\Backend-GuardsEarnings\\GuardsEarningsAPI\\GuardsEarningsAPI\\GuardsEarningsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Educacion\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Educacion\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Educacion\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Educacion\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Educacion\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Educacion\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

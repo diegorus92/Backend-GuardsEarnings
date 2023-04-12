@@ -1,0 +1,64 @@
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\appsettings.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.exe
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.deps.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.runtimeconfig.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.pdb
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.AssemblyReference.cache
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfoInputs.cache
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfo.cs
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.CoreCompileInputs.cache
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.GuardsEarningsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.GuardsEarningsAPI.props
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GuardsEarningsAPI.props
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GuardsEarningsAPI.props
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\scopedcss\bundle\GuardsEarningsAPI.styles.css
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.CopyComplete
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\refint\GuardsEarningsAPI.dll
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.pdb
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.genruntimeconfig.cache
+C:\Diego\Cursos\Bootcamp2-Devlights\Pruebas\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\ref\GuardsEarningsAPI.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\appsettings.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.exe
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.deps.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.runtimeconfig.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\GuardsEarningsAPI.pdb
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.AssemblyReference.cache
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfoInputs.cache
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfo.cs
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.CoreCompileInputs.cache
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.GuardsEarningsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.GuardsEarningsAPI.props
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GuardsEarningsAPI.props
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GuardsEarningsAPI.props
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\scopedcss\bundle\GuardsEarningsAPI.styles.css
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.CopyComplete
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\refint\GuardsEarningsAPI.dll
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.pdb
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.genruntimeconfig.cache
+C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\ref\GuardsEarningsAPI.dll
