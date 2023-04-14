@@ -20,10 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\GuardsEarnings_BL\GuardsEarnings_BL.csproj" />
     <ProjectReference Include="..\GuardsEarnings_DAL\GuardsEarnings_DAL.csproj" />
   </ItemGroup>
 

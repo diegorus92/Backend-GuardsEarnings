@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Dtos\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GuardsEarnings_DAL\GuardsEarnings_DAL.csproj" />
   </ItemGroup>
 
 </Project>

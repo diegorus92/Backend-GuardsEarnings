@@ -1258,6 +1258,19 @@
           }
         }
       },
+      "GuardsEarnings_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GuardsEarnings_DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GuardsEarnings_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GuardsEarnings_BL.dll": {}
+        }
+      },
       "GuardsEarnings_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3228,6 +3241,11 @@
         "version.txt"
       ]
     },
+    "GuardsEarnings_BL/1.0.0": {
+      "type": "project",
+      "path": "../GuardsEarnings_BL/GuardsEarnings_BL.csproj",
+      "msbuildProject": "../GuardsEarnings_BL/GuardsEarnings_BL.csproj"
+    },
     "GuardsEarnings_DAL/1.0.0": {
       "type": "project",
       "path": "../GuardsEarnings_DAL/GuardsEarnings_DAL.csproj",
@@ -3236,6 +3254,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "GuardsEarnings_BL >= 1.0.0",
       "GuardsEarnings_DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.14",
@@ -3270,6 +3289,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Diego\\proyectos\\Programación\\Proyectos FULLSTACK\\GuardsEarnings\\Backend-GuardsEarnings\\GuardsEarningsAPI\\GuardsEarnings_BL\\GuardsEarnings_BL.csproj": {
+              "projectPath": "C:\\Diego\\proyectos\\Programación\\Proyectos FULLSTACK\\GuardsEarnings\\Backend-GuardsEarnings\\GuardsEarningsAPI\\GuardsEarnings_BL\\GuardsEarnings_BL.csproj"
+            },
             "C:\\Diego\\proyectos\\Programación\\Proyectos FULLSTACK\\GuardsEarnings\\Backend-GuardsEarnings\\GuardsEarningsAPI\\GuardsEarnings_DAL\\GuardsEarnings_DAL.csproj": {
               "projectPath": "C:\\Diego\\proyectos\\Programación\\Proyectos FULLSTACK\\GuardsEarnings\\Backend-GuardsEarnings\\GuardsEarningsAPI\\GuardsEarnings_DAL\\GuardsEarnings_DAL.csproj"
             }
