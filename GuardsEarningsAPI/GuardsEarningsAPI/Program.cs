@@ -17,6 +17,9 @@ builder.Services.AddScoped<DbContext, Context>();
 builder.Services.AddScoped<IRepository<Guard>, GuardRepository>();
 builder.Services.AddScoped<IGuardService, GuardService>();
 
+builder.Services.AddScoped<IRepository<Target>, TargetRepository>();
+builder.Services.AddScoped<ITargetService, TargetService>();   
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

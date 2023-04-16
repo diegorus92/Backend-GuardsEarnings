@@ -36,12 +36,12 @@ namespace GuardsEarnings_DAL.Repositories
             this.Save();
         }
 
-        public Guard Get(long id)
+        public Guard? Get(long id)
         {
             Guard? guard = _context.Guards.Find(id);
             if(guard == null)
             {
-                throw new NullReferenceException("Guard not found with id: "+id);
+                return null;
             }
             return guard;
         }

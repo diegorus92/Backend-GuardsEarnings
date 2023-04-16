@@ -1,4 +1,5 @@
-﻿using GuardsEarnings_BL.Services;
+﻿using GuardsEarnings_BL.Dtos;
+using GuardsEarnings_BL.Services;
 using GuardsEarnings_DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,28 +30,45 @@ namespace GuardsEarningsAPI.Controllers
 
         // GET api/<GuardsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Guard>> Get(long id)
         {
-            return "value";
+            Guard? guard = _guardService.GetGuard(id);
+
+            if(guard == null)
+            {
+                return NotFound("Guard not found. ID non-existent") ;
+            }
+            return guard;
         }
 
         // POST api/<GuardsController>
         [HttpPost]
-        public void Post([FromBody] Guard value)
+        public async Task<ActionResult<string>> Post([FromBody] GuardDTO value)
         {
             _guardService.CreateGuard(value);
+            return Ok("Guard saved succesfully");
         }
 
         // PUT api/<GuardsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<string>> Put(long id, [FromBody] GuardDTO value)
         {
+            var state =  _guardService.UpdateGuard(id, value);
+            if (!state)
+            {
+                return NotFound("Guard not found to update");
+            }
+            return Ok("Successful Update");
         }
 
         // DELETE api/<GuardsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult<string>> Delete(long id)
         {
+            var state = _guardService.DeleteGuard(id);
+            if (!state)
+                return BadRequest("Guard not found to eliminate");
+            return Ok("Guard removed successfuly");
         }
     }
 }

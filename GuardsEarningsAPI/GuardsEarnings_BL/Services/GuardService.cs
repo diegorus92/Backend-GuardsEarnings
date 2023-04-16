@@ -1,5 +1,7 @@
-﻿using GuardsEarnings_DAL.Models;
+﻿using GuardsEarnings_BL.Dtos;
+using GuardsEarnings_DAL.Models;
 using GuardsEarnings_DAL.Repositories;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +19,30 @@ namespace GuardsEarnings_BL.Services
             _repository = repository;
         }
 
-        public void CreateGuard(Guard guard)
+        public void CreateGuard(GuardDTO guard)
         {
-            _repository.Create(guard);
+            Guard newGuard = new Guard();
+
+            newGuard.GuardId = guard.GuardId;
+            newGuard.Name = guard.Name;
+            newGuard.Surname = guard.Surname;
+            newGuard.Cellphone = guard.Cellphone;
+            newGuard.Email = guard.Email;
+            newGuard.Direction = guard.Direction;
+            newGuard.Works = null;
+
+            _repository.Create(newGuard);
         }
 
-        public void DeleteGuard(Guard guard)
+        public bool DeleteGuard(long id)
         {
-            throw new NotImplementedException();
+            Guard? guard = _repository.Get(id);
+            if (guard == null)
+            {
+                return false;
+            }
+            _repository.Delete(guard);
+            return true;
         }
 
         public Guard? GetGuard(long id) 
@@ -37,9 +55,19 @@ namespace GuardsEarnings_BL.Services
             return _repository.GetAll();
         }
 
-        public void UpdateGuard(Guard guard)
+        public bool UpdateGuard(long id, GuardDTO guard)
         {
-            throw new NotImplementedException();
+            Guard? guardToUpdate = _repository.Get(id);
+            if (guardToUpdate == null)
+                return false;
+            guardToUpdate.Name = guard.Name;
+            guardToUpdate.Surname= guard.Surname;
+            guardToUpdate.Email = guard.Email;
+            guardToUpdate.Cellphone = guard.Cellphone;
+            guardToUpdate.Direction = guard.Direction;
+
+            _repository.Update(guardToUpdate);
+            return true;
         }
     }
 }
