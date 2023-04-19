@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Models
@@ -14,7 +15,7 @@ namespace GuardsEarnings_DAL.Models
         public string? Email { get; set; }
         public string? Cellphone { get; set; }
         public string Direction { get; set; }
-
+        
         public virtual ICollection<Work>? Works { get; set; }
     }
 }

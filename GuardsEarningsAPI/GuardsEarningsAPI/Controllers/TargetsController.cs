@@ -31,7 +31,7 @@ namespace GuardsEarningsAPI.Controllers
 
         // GET api/<TargetsController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Target>> Get(int id)
+        public async Task<ActionResult<Target>> Get(long id)
         {
             Target? target = _targetService.GetTarget(id);
             if (target == null)

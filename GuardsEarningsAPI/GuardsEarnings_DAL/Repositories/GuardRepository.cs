@@ -1,5 +1,6 @@
 ﻿using GuardsEarnings_DAL.Data;
 using GuardsEarnings_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

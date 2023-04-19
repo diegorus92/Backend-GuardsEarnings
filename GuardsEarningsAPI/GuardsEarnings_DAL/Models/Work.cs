@@ -11,8 +11,8 @@ namespace GuardsEarnings_DAL.Models
         public long WorkId { get; set; }
         public float QtyHours { get; set; }
 
-        public virtual ICollection<Guard> Guards { get; set; }
-        public virtual ICollection<Target> Targets { get; set; }
-        public virtual ICollection<Journey> Journeys { get; set; }
+        public  ICollection<Guard>? Guards { get; set; }
+        public  ICollection<Target>? Targets { get; set; }
+        public  ICollection<Journey>? Journeys { get; set; }
     }
 }
