@@ -14,6 +14,7 @@ namespace GuardsEarnings_DAL.Models
         public string Surname { get; set; }
         public string? Email { get; set; }
         public string? Cellphone { get; set; }
+        public byte[]? Imagen { get; set; }
         public string Direction { get; set; }
         
         public virtual ICollection<Work>? Works { get; set; }

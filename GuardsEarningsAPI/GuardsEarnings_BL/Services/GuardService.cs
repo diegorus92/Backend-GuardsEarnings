@@ -55,6 +55,11 @@ namespace GuardsEarnings_BL.Services
             return _repository.GetAll();
         }
 
+        public Guard? GetWorks(long guardId)
+        {
+            return _repository.GetWorkOfGuards(guardId);
+        }
+
         public bool UpdateGuard(long id, GuardDTO guard)
         {
             Guard? guardToUpdate = _repository.Get(id);

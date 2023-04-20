@@ -3,6 +3,7 @@ using GuardsEarnings_DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -57,6 +58,22 @@ namespace GuardsEarnings_DAL.Repositories
         {
             _context.Guards.Update(entity);
             this.Save();
+        }
+
+        public Guard? GetWorkOfGuards(long guardId)
+        {
+            Guard? guard = _context.Guards.Find(guardId);
+            if(guard == null)
+            {
+                return null;
+            }
+            _context.Entry(guard).Collection(guard => guard.Works).
+                Query().
+                Include(works => works.Target).
+                Include(works => works.Journey).
+                Load();
+
+            return guard;
         }
     }
 }

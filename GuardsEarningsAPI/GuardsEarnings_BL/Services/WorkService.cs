@@ -26,12 +26,13 @@ namespace GuardsEarnings_BL.Services
         public bool CreateWork(WorkDTO work)
         {
             Work newWork = new Work();
-            newWork.Guards = new List<Guard>();
-            newWork.Targets = new List<Target>();
-            newWork.Journeys = new List<Journey>();
+            newWork.Guard = new Guard();
+            newWork.Target = new Target();
+            newWork.Journey = new Journey();
 
             newWork.WorkId = 0;
-            newWork.QtyHours = work.QtyHours;
+            newWork.EnterTime = work.EnterTime;
+            newWork.OutTime = work.OutTime;
 
             Guard guard = new Guard();
             Target target = new Target();
@@ -41,9 +42,9 @@ namespace GuardsEarnings_BL.Services
             target.TargetId = work.NewTargetId;
             journey.JourneyId = work.NewJourneyId;
 
-            newWork.Guards.Add(guard);
-            newWork.Targets.Add(target);
-            newWork.Journeys.Add(journey);
+            newWork.Guard = guard;
+            newWork.Target = target;
+            newWork.Journey = journey;
 
             
 
@@ -74,10 +75,12 @@ namespace GuardsEarnings_BL.Services
             Work? workToUpdate = _repository.Get(id) ;
             if (workToUpdate == null) return false;
             workToUpdate.WorkId = id;
-            workToUpdate.QtyHours = work.QtyHours;
+            workToUpdate.EnterTime = work.EnterTime;
+            workToUpdate.OutTime = work.OutTime;
 
             _repository.Update(workToUpdate);
             return true;
         }
+
     }
 }

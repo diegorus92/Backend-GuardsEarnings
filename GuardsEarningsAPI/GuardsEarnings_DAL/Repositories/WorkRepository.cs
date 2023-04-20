@@ -2,6 +2,7 @@
 using GuardsEarnings_DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
 using System.Text;
@@ -26,21 +27,22 @@ namespace GuardsEarnings_DAL.Repositories
             Work work = new Work();
 
             work.WorkId = entity.WorkId;
-            work.QtyHours = entity.QtyHours;
-            work.Guards = new List<Guard>();
-            work.Targets = new List<Target>();
-            work.Journeys = new List<Journey>();
+            work.EnterTime = entity.EnterTime;
+            work.OutTime = entity.OutTime;
+            work.Guard = new Guard();
+            work.Target = new Target();
+            work.Journey = new Journey();
 
             //var relatedGuard = _context.Guards.FirstOrDefault(g => g.GuardId == 1);
-            var relatedGuard = _context.Guards.Find(entity.Guards.LastOrDefault().GuardId);
-            var relatedTarget = _context.Targets.Find(entity.Targets.LastOrDefault().TargetId);
-            var relatedJourney = _context.Journeys.Find(entity.Journeys.LastOrDefault().JourneyId);
+            var relatedGuard = _context.Guards.Find(entity.Guard.GuardId);
+            var relatedTarget = _context.Targets.Find(entity.Target.TargetId);
+            var relatedJourney = _context.Journeys.Find(entity.Journey.JourneyId);
 
             if(relatedGuard != null && relatedTarget != null && relatedJourney != null) 
             {
-                work.Guards.Add(relatedGuard);
-                work.Targets.Add(relatedTarget);
-                work.Journeys.Add(relatedJourney);
+                work.Guard = relatedGuard;
+                work.Target = relatedTarget;
+                work.Journey = relatedJourney;
 
                 _context.Works.Add(work);
                 Save();
@@ -64,9 +66,9 @@ namespace GuardsEarnings_DAL.Repositories
                 return null;
             }
 
-            _context.Entry(work).Collection(w => w.Guards).Load();
-            _context.Entry(work).Collection(w => w.Targets).Load();
-            _context.Entry(work).Collection(w => w.Journeys).Load();
+            _context.Entry(work).Reference(w => w.Guard).Load();
+            _context.Entry(work).Reference(w => w.Target).Load();
+            _context.Entry(work).Reference(w => w.Journey).Load();
             return work;
         }
 
@@ -86,5 +88,12 @@ namespace GuardsEarnings_DAL.Repositories
             _context.Works.Update(entity);
             Save();
         }
+
+        public Guard? GetWorkOfGuards(long guardId)
+        {
+            throw new NotImplementedException();    
+        }
+
+        
     }
 }

@@ -27,19 +27,19 @@ namespace GuardsEarnings_DAL.Data
         {
             modelBuilder.Entity<Guard>().
                 HasMany<Work>(guard => guard.Works).
-                WithMany(work => work.Guards);
+                WithOne(work => work.Guard);
 
             modelBuilder.Entity<Target>().
                 HasMany<Work>(target => target.Works).
-                WithMany(work => work.Targets);
+                WithOne(work => work.Target);
 
             modelBuilder.Entity<Journey>().
                 HasMany<Work>(journey => journey.Works).
-                WithMany(work => work.Journeys);
+                WithOne(work => work.Journey);
 
-            modelBuilder.Entity<Work>().HasMany<Guard>(work => work.Guards);
-            modelBuilder.Entity<Work>().HasMany<Target>(work => work.Targets);
-            modelBuilder.Entity<Work>().HasMany<Journey>(work => work.Journeys);
+            modelBuilder.Entity<Work>().HasOne<Guard>(work => work.Guard);
+            modelBuilder.Entity<Work>().HasOne<Target>(work => work.Target);
+            modelBuilder.Entity<Work>().HasOne<Journey>(work => work.Journey);
         }
     }
 }

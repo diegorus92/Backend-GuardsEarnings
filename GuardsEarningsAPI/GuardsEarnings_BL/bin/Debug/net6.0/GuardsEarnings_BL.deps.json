@@ -1014,7 +1014,6 @@
       "GuardsEarnings_DAL/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.4",
-          "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.14",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",

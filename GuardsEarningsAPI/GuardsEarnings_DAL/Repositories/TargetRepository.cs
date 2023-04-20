@@ -49,6 +49,11 @@ namespace GuardsEarnings_DAL.Repositories
             return targets;
         }
 
+        public Guard? GetWorkOfGuards(long guardId)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Save()
         {
             _context.SaveChanges();

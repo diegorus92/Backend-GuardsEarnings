@@ -40,6 +40,9 @@ namespace GuardsEarnings_DAL.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<byte[]>("Imagen")
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -81,6 +84,12 @@ namespace GuardsEarnings_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("MapLocation")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -108,102 +117,68 @@ namespace GuardsEarnings_DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("WorkId"), 1L, 1);
 
-                    b.Property<float>("QtyHours")
-                        .HasColumnType("real");
+                    b.Property<string>("EnterTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("GuardId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("JourneyId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("OutTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("TargetId")
+                        .HasColumnType("bigint");
 
                     b.HasKey("WorkId");
+
+                    b.HasIndex("GuardId");
+
+                    b.HasIndex("JourneyId");
+
+                    b.HasIndex("TargetId");
 
                     b.ToTable("Works");
                 });
 
-            modelBuilder.Entity("GuardWork", b =>
+            modelBuilder.Entity("GuardsEarnings_DAL.Models.Work", b =>
                 {
-                    b.Property<long>("GuardsGuardId")
-                        .HasColumnType("bigint");
+                    b.HasOne("GuardsEarnings_DAL.Models.Guard", "Guard")
+                        .WithMany("Works")
+                        .HasForeignKey("GuardId");
 
-                    b.Property<long>("WorksWorkId")
-                        .HasColumnType("bigint");
+                    b.HasOne("GuardsEarnings_DAL.Models.Journey", "Journey")
+                        .WithMany("Works")
+                        .HasForeignKey("JourneyId");
 
-                    b.HasKey("GuardsGuardId", "WorksWorkId");
+                    b.HasOne("GuardsEarnings_DAL.Models.Target", "Target")
+                        .WithMany("Works")
+                        .HasForeignKey("TargetId");
 
-                    b.HasIndex("WorksWorkId");
+                    b.Navigation("Guard");
 
-                    b.ToTable("GuardWork");
+                    b.Navigation("Journey");
+
+                    b.Navigation("Target");
                 });
 
-            modelBuilder.Entity("JourneyWork", b =>
+            modelBuilder.Entity("GuardsEarnings_DAL.Models.Guard", b =>
                 {
-                    b.Property<long>("JourneysJourneyId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("WorksWorkId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("JourneysJourneyId", "WorksWorkId");
-
-                    b.HasIndex("WorksWorkId");
-
-                    b.ToTable("JourneyWork");
+                    b.Navigation("Works");
                 });
 
-            modelBuilder.Entity("TargetWork", b =>
+            modelBuilder.Entity("GuardsEarnings_DAL.Models.Journey", b =>
                 {
-                    b.Property<long>("TargetsTargetId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("WorksWorkId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("TargetsTargetId", "WorksWorkId");
-
-                    b.HasIndex("WorksWorkId");
-
-                    b.ToTable("TargetWork");
+                    b.Navigation("Works");
                 });
 
-            modelBuilder.Entity("GuardWork", b =>
+            modelBuilder.Entity("GuardsEarnings_DAL.Models.Target", b =>
                 {
-                    b.HasOne("GuardsEarnings_DAL.Models.Guard", null)
-                        .WithMany()
-                        .HasForeignKey("GuardsGuardId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GuardsEarnings_DAL.Models.Work", null)
-                        .WithMany()
-                        .HasForeignKey("WorksWorkId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("JourneyWork", b =>
-                {
-                    b.HasOne("GuardsEarnings_DAL.Models.Journey", null)
-                        .WithMany()
-                        .HasForeignKey("JourneysJourneyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GuardsEarnings_DAL.Models.Work", null)
-                        .WithMany()
-                        .HasForeignKey("WorksWorkId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("TargetWork", b =>
-                {
-                    b.HasOne("GuardsEarnings_DAL.Models.Target", null)
-                        .WithMany()
-                        .HasForeignKey("TargetsTargetId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GuardsEarnings_DAL.Models.Work", null)
-                        .WithMany()
-                        .HasForeignKey("WorksWorkId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Works");
                 });
 #pragma warning restore 612, 618
         }

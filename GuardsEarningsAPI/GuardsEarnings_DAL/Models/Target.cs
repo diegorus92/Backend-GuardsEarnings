@@ -13,6 +13,8 @@ namespace GuardsEarnings_DAL.Models
         public string Type { get; set; }
         public float Payment { get; set; }
         public string Direction { get; set; }
+        public string? MapLocation { get; set; } 
+        public byte[]? Image { get; set; }
         public string? Notes { get; set; }
 
         public virtual ICollection<Work>? Works { get; set; }

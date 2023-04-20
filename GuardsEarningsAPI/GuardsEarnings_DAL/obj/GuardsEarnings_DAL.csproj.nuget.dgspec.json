@@ -44,10 +44,6 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.14, )"
-            },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[6.0.14, )"

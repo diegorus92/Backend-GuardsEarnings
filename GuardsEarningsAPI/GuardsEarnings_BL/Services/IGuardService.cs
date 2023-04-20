@@ -15,5 +15,6 @@ namespace GuardsEarnings_BL.Services
         public bool UpdateGuard(long id, GuardDTO guard);
         public Guard? GetGuard(long id);
         public ICollection<Guard> GetGuards();
+        public Guard? GetWorks(long guardId);
     }
 }

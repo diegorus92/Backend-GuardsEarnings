@@ -70,5 +70,11 @@ namespace GuardsEarningsAPI.Controllers
                 return BadRequest("Guard not found to eliminate");
             return Ok("Guard removed successfuly");
         }
+
+        [HttpGet("works/{guardId}")]
+        public Guard? GetWorks(long guardId)
+        {
+            return _guardService.GetWorks(guardId);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GuardsEarnings_DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace GuardsEarnings_DAL.Repositories
         public void Update(T entity);
         public void Delete(T entity);
         public void Save();
+        public Guard? GetWorkOfGuards(long guardId);
     }
 }
