@@ -89,6 +89,23 @@ namespace GuardsEarnings_DAL.Repositories
             Save();
         }
 
+        public void UpdateCompleteWork(Work entity, long guardId, long targetId, long journeyId)
+        {
+            Guard? guard = _context.Guards.Find(guardId);
+            Target? target = _context.Targets.Find(targetId);
+            Journey? journey = _context.Journeys.Find(journeyId);
+
+            if(guard != null && journey != null && target != null) 
+            {
+                entity.Guard = guard;
+                entity.Target = target;
+                entity.Journey = journey;
+            }
+
+            _context.Works.Update(entity);
+            Save();
+        }
+
         public Guard? GetWorkOfGuards(long guardId)
         {
             throw new NotImplementedException();    

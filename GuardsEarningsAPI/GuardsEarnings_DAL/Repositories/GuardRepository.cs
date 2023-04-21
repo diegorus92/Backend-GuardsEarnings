@@ -45,6 +45,12 @@ namespace GuardsEarnings_DAL.Repositories
             {
                 return null;
             }
+
+            _context.Entry(guard).Collection(guard => guard.Works).Query().
+                Include(works => works.Target).
+                Include(works => works.Journey).
+                Load();
+
             return guard;
         }
 
@@ -74,6 +80,11 @@ namespace GuardsEarnings_DAL.Repositories
                 Load();
 
             return guard;
+        }
+
+        public void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

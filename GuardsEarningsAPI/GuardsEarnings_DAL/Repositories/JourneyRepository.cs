@@ -61,5 +61,10 @@ namespace GuardsEarnings_DAL.Repositories
             _context.Journeys.Update(entity);
             Save();
         }
+
+        public void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

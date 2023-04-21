@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Models
@@ -17,6 +18,7 @@ namespace GuardsEarnings_DAL.Models
         public byte[]? Image { get; set; }
         public string? Notes { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<Work>? Works { get; set; }
     }
 }

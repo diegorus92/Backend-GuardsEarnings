@@ -16,5 +16,6 @@ namespace GuardsEarnings_DAL.Repositories
         public void Delete(T entity);
         public void Save();
         public Guard? GetWorkOfGuards(long guardId);
+        void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId);
     }
 }

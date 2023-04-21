@@ -1,6 +1,7 @@
 ﻿using GuardsEarnings_BL.Dtos;
 using GuardsEarnings_DAL.Models;
 using GuardsEarnings_DAL.Repositories;
+using SQLitePCL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -78,7 +79,8 @@ namespace GuardsEarnings_BL.Services
             workToUpdate.EnterTime = work.EnterTime;
             workToUpdate.OutTime = work.OutTime;
 
-            _repository.Update(workToUpdate);
+           
+            _repository.UpdateCompleteWork(workToUpdate, work.NewGuardId, work.NewTargetId, work.NewJourneyId);
             return true;
         }
 
