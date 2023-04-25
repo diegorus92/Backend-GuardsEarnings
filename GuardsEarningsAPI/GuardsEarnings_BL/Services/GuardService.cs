@@ -12,9 +12,9 @@ namespace GuardsEarnings_BL.Services
 {
     public class GuardService:IGuardService
     {
-        private readonly IRepository<Guard> _repository;
+        private readonly IGuardRepository _repository;
 
-        public GuardService(IRepository<Guard> repository)
+        public GuardService(IGuardRepository repository)
         {
             _repository = repository;
         }

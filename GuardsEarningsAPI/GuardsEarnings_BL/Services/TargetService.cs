@@ -11,9 +11,9 @@ namespace GuardsEarnings_BL.Services
 {
     public class TargetService : ITargetService
     {
-        private readonly IRepository<Target> _targetRepository;
+        private readonly ITargetRepository _targetRepository;
 
-        public TargetService(IRepository<Target> targetRepository)
+        public TargetService(ITargetRepository targetRepository)
         {
             _targetRepository = targetRepository;
         }

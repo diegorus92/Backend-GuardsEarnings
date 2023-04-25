@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Repositories
 {
-    public class JourneyRepository : IRepository<Journey>
+    public class JourneyRepository : IJourneyRepository//IRepository<Journey>
     {
         private readonly Context _context;
 
@@ -46,9 +46,10 @@ namespace GuardsEarnings_DAL.Repositories
             return journeys;
         }
 
-        public Guard? GetWorkOfGuards(long guardId)
+        public Journey? GetByDate(int year, int month, int day)
         {
-            throw new NotImplementedException();
+            DateTime date = new DateTime(year, month, day);
+            return _context.Journeys.Where(journey => journey.Date == date).FirstOrDefault();
         }
 
         public void Save()
@@ -62,9 +63,5 @@ namespace GuardsEarnings_DAL.Repositories
             Save();
         }
 
-        public void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

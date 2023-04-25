@@ -1,5 +1,6 @@
 ﻿using GuardsEarnings_DAL.Data;
 using GuardsEarnings_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Repositories
 {
-    public class WorkRepository : IRepository<Work>
+    public class WorkRepository : IWorkRepository//IRepository<Work>
     {
         private readonly Context _context;
 
@@ -83,6 +84,21 @@ namespace GuardsEarnings_DAL.Repositories
             _context.SaveChanges();
         }
 
+        public ICollection<Work> SearchWorksByGuardAndDate(long guardId, int year, int month)
+        {
+            ICollection<Work> works = _context.Works.
+                Where(work => work.Guard.GuardId == guardId && work.Journey.Date.Year == year && work.Journey.Date.Month == month).AsQueryable().ToList() ;
+            
+
+            foreach(Work w in works)
+            {
+                _context.Entry(w).Reference(w => w.Journey).Load();
+                _context.Entry(w).Reference(w => w.Target).Load();
+            }
+
+            return works;
+        }
+
         public void Update(Work entity)
         {
             _context.Works.Update(entity);
@@ -106,11 +122,5 @@ namespace GuardsEarnings_DAL.Repositories
             Save();
         }
 
-        public Guard? GetWorkOfGuards(long guardId)
-        {
-            throw new NotImplementedException();    
-        }
-
-        
     }
 }

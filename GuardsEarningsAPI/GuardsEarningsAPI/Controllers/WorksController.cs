@@ -39,6 +39,12 @@ namespace GuardsEarningsAPI.Controllers
             return Ok(work);
         }
 
+        [HttpGet("guard/{guardId}/{year}/{month}")]
+        public IEnumerable<Work> searchByGuardAndDate(long guardId, int year, int month)
+        {
+            return _workService.GetWorksByGuardAndDate(guardId, year, month);
+        }
+
         // POST api/<WorksController>
         [HttpPost]
         public async Task<ActionResult<string>> Post([FromBody] WorkDTO value)

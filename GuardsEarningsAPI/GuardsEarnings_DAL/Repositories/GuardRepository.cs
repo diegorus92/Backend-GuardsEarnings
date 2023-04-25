@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Repositories
 {
-    public class GuardRepository: IRepository<Guard>
+    public class GuardRepository: IGuardRepository//IRepository<Guard>
     {
         private readonly Context _context;
 
@@ -48,7 +48,7 @@ namespace GuardsEarnings_DAL.Repositories
 
             _context.Entry(guard).Collection(guard => guard.Works).Query().
                 Include(works => works.Target).
-                Include(works => works.Journey).
+                Include(works => works.Journey).OrderBy(work => work.Journey.Date).
                 Load();
 
             return guard;
@@ -80,11 +80,6 @@ namespace GuardsEarnings_DAL.Repositories
                 Load();
 
             return guard;
-        }
-
-        public void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId)
-        {
-            throw new NotImplementedException();
         }
     }
 }

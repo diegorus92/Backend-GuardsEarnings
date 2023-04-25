@@ -41,6 +41,17 @@ namespace GuardsEarningsAPI.Controllers
             return Ok(journey);
         }
 
+        [HttpGet("date/{year}/{month}/{day}")]
+        public async Task<ActionResult<Journey>> Get(int year, int month, int day)
+        {
+            Journey? journey = _journeyService.GetJourneyByDate(year, month, day);
+            if(journey == null)
+            {
+                return NotFound("Journey doesn't exist with date = "+ year+ "-"+month+"-"+day);
+            }
+            return Ok(journey);
+        }
+
         // POST api/<JourneysController>
         [HttpPost]
         public async Task<ActionResult<string>> Post([FromBody] JourneyDTO value)

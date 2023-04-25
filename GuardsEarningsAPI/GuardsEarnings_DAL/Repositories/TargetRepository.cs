@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GuardsEarnings_DAL.Repositories
 {
-    public class TargetRepository : IRepository<Target>
+    public class TargetRepository : ITargetRepository//IRepository<Target>
     {
 
         private readonly Context _context;
@@ -49,11 +49,6 @@ namespace GuardsEarnings_DAL.Repositories
             return targets;
         }
 
-        public Guard? GetWorkOfGuards(long guardId)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Save()
         {
             _context.SaveChanges();
@@ -63,11 +58,6 @@ namespace GuardsEarnings_DAL.Repositories
         {
             _context.Targets.Update(entity);
             Save();
-        }
-
-        public void UpdateCompleteWork(Work workToUpdate, long newGuardId, long newTargetId, long newJourneyId)
-        {
-            throw new NotImplementedException();
         }
     }
 }

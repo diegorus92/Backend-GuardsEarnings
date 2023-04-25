@@ -12,10 +12,10 @@ namespace GuardsEarnings_BL.Services
 {
     public class WorkService : IWorkService
     {
-        private readonly IRepository<Work> _repository;
+        private readonly IWorkRepository _repository;
 
         public WorkService(
-                IRepository<Work> repository
+                IWorkRepository repository
             )
         {
             _repository = repository;
@@ -69,6 +69,11 @@ namespace GuardsEarnings_BL.Services
         public ICollection<Work> GetWorks()
         {
             return _repository.GetAll();
+        }
+
+        public ICollection<Work> GetWorksByGuardAndDate(long guardId, int year, int month)
+        {
+            return _repository.SearchWorksByGuardAndDate(guardId, year, month);    
         }
 
         public bool UpdateWork(long id, WorkDTO work)

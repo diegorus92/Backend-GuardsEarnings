@@ -11,9 +11,9 @@ namespace GuardsEarnings_BL.Services
 {
     public class JourneyService : IJourneyService
     {
-        private readonly IRepository<Journey> _journeyRepository;
+        private readonly IJourneyRepository _journeyRepository;
 
-        public JourneyService(IRepository<Journey> journeyRepository)
+        public JourneyService(IJourneyRepository journeyRepository)
         {
             _journeyRepository = journeyRepository;
         }
@@ -43,6 +43,11 @@ namespace GuardsEarnings_BL.Services
         public Journey? GetJoureny(long id)
         {
             return _journeyRepository.Get(id);
+        }
+
+        public Journey? GetJourneyByDate(int year, int month, int day)
+        {
+            return _journeyRepository.GetByDate(year, month, day);
         }
 
         public ICollection<Journey> GetJourneys()

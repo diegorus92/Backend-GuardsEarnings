@@ -15,5 +15,6 @@ namespace GuardsEarnings_BL.Services
         public bool UpdateWork(long id, WorkDTO work);
         public Work? GetWork(long id);
         public ICollection<Work> GetWorks();
+        public ICollection<Work> GetWorksByGuardAndDate(long guardId, int year, int month);
     }
 }

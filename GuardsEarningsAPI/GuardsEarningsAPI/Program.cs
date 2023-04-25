@@ -16,19 +16,22 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnection"));
+
 });
+
+
 builder.Services.AddScoped<DbContext, Context>();
 
-builder.Services.AddScoped<IRepository<Guard>, GuardRepository>();
+builder.Services.AddScoped<IGuardRepository, GuardRepository>();
 builder.Services.AddScoped<IGuardService, GuardService>();
 
-builder.Services.AddScoped<IRepository<Target>, TargetRepository>();
+builder.Services.AddScoped<ITargetRepository, TargetRepository>();
 builder.Services.AddScoped<ITargetService, TargetService>();   
 
-builder.Services.AddScoped<IRepository<Journey>, JourneyRepository>();
+builder.Services.AddScoped<IJourneyRepository, JourneyRepository>();
 builder.Services.AddScoped<IJourneyService, JourneyService>();
 
-builder.Services.AddScoped<IRepository<Work>, WorkRepository>();
+builder.Services.AddScoped<IWorkRepository, WorkRepository>();
 builder.Services.AddScoped<IWorkService, WorkService>();
 
 

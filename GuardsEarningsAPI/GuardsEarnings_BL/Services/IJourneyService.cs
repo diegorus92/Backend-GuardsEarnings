@@ -15,5 +15,6 @@ namespace GuardsEarnings_BL.Services
         public bool UpdateJourney(long id, JourneyDTO journey);
         public Journey? GetJoureny(long id);
         public ICollection<Journey> GetJourneys();
+        public Journey?GetJourneyByDate(int year, int month, int day);
     }
 }

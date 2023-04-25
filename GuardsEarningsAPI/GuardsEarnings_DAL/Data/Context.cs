@@ -41,5 +41,10 @@ namespace GuardsEarnings_DAL.Data
             modelBuilder.Entity<Work>().HasOne<Target>(work => work.Target);
             modelBuilder.Entity<Work>().HasOne<Journey>(work => work.Journey);
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(options => options.EnableRetryOnFailure());
+        }
     }
 }
