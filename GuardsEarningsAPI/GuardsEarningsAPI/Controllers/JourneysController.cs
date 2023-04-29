@@ -54,10 +54,9 @@ namespace GuardsEarningsAPI.Controllers
 
         // POST api/<JourneysController>
         [HttpPost]
-        public async Task<ActionResult<string>> Post([FromBody] JourneyDTO value)
+        public Journey? Post([FromBody] JourneyDTO value)
         {
-            _journeyService.CreateJourney(value);
-            return Ok("Journey successfuly saved");
+            return _journeyService.CreateJourney(value);
         }
 
         // PUT api/<JourneysController>/5

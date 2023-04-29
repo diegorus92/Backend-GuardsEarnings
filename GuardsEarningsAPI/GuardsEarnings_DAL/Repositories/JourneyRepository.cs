@@ -20,10 +20,11 @@ namespace GuardsEarnings_DAL.Repositories
 
 
 
-        public void Create(Journey entity)
+        public Journey? Create(Journey entity)
         {
             _context.Journeys.Add(entity);
             Save();
+            return entity;
         }
 
         public void Delete(Journey entity)

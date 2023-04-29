@@ -21,15 +21,25 @@ namespace GuardsEarnings_BL.Services
 
 
 
-        public void CreateJourney(JourneyDTO journey)
+        public Journey? CreateJourney(JourneyDTO journey)
         {
-            Journey newJourney = new Journey();
+            //Firs search the journey if exist in the DB.
+            Journey? journeySearch = _journeyRepository.GetByDate(journey.Date.Year, journey.Date.Month, journey.Date.Day); 
 
-            newJourney.JourneyId = journey.JourneyId;
-            newJourney.Date = journey.Date;
-            newJourney.Works = null;
+            if(journeySearch == null ) //if not exist in DB, then create it and return it
+            {
+                Journey newJourney = new Journey();
 
-            _journeyRepository.Create(newJourney);
+                newJourney.JourneyId = journey.JourneyId;
+                newJourney.Date = journey.Date;
+                newJourney.Works = null;
+
+                return _journeyRepository.Create(newJourney);
+            }
+            else //otherwise, return the found journey
+            {
+                return journeySearch;
+            }
         }
 
         public bool DeleteJourney(long id)

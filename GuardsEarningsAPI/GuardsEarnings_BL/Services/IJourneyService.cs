@@ -10,7 +10,7 @@ namespace GuardsEarnings_BL.Services
 {
     public interface IJourneyService
     {
-        public void CreateJourney(JourneyDTO journey);
+        public Journey? CreateJourney(JourneyDTO journey);
         public bool DeleteJourney(long id);
         public bool UpdateJourney(long id, JourneyDTO journey);
         public Journey? GetJoureny(long id);

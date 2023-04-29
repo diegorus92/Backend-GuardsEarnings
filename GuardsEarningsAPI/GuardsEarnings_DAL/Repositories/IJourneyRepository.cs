@@ -10,7 +10,7 @@ namespace GuardsEarnings_DAL.Repositories
     public interface IJourneyRepository
     {
         public void Save();
-        public void Create(Journey entity);
+        public Journey? Create(Journey entity);
         public void Delete(Journey entity);
         public Journey? Get(long id);
         public ICollection<Journey> GetAll();
