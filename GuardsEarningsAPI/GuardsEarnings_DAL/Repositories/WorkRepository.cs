@@ -3,8 +3,8 @@ using GuardsEarnings_DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.Core.Objects.DataClasses;
+//using System.Data.Entity;
+//using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +30,7 @@ namespace GuardsEarnings_DAL.Repositories
             work.WorkId = entity.WorkId;
             work.EnterTime = entity.EnterTime;
             work.OutTime = entity.OutTime;
+            work.Payment = entity.Payment;
             work.Guard = new Guard();
             work.Target = new Target();
             work.Journey = new Journey();

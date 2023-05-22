@@ -34,6 +34,7 @@ namespace GuardsEarnings_BL.Services
             newWork.WorkId = 0;
             newWork.EnterTime = work.EnterTime;
             newWork.OutTime = work.OutTime;
+            newWork.Payment = work.Payment;
 
             Guard guard = new Guard();
             Target target = new Target();
@@ -83,6 +84,7 @@ namespace GuardsEarnings_BL.Services
             workToUpdate.WorkId = id;
             workToUpdate.EnterTime = work.EnterTime;
             workToUpdate.OutTime = work.OutTime;
+            workToUpdate.Payment = work.Payment;
 
            
             _repository.UpdateCompleteWork(workToUpdate, work.NewGuardId, work.NewTargetId, work.NewJourneyId);

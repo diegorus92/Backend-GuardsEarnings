@@ -1,0 +1,7 @@
+--> Add a new column "Payment" into Works table, in order to calculate in Forntend,
+	total pay per hours from this table instead of Target table.
+
+--> Create a Users entity with "password hash" and  "password salt", 
+	and Roles entity, in order to implement Authentication and Authorization. 
+ 
+--> Implement write and read into DB for Image of Guard property

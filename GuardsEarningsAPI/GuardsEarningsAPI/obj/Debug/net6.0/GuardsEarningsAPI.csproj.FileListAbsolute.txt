@@ -46,7 +46,6 @@ C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-Guar
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfoInputs.cache
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.AssemblyInfo.cs
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.csproj.CoreCompileInputs.cache
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.GuardsEarningsAPI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.GuardsEarningsAPI.props
@@ -62,8 +61,6 @@ C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-Guar
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.pdb
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\GuardsEarningsAPI.genruntimeconfig.cache
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\obj\Debug\net6.0\ref\GuardsEarningsAPI.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\EntityFramework.SqlServer.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\EntityFramework.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -82,9 +79,7 @@ C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-Guar
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\SQLitePCLRaw.core.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.CodeDom.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.Data.SqlClient.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
@@ -98,11 +93,6 @@ C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-Guar
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarningsAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll

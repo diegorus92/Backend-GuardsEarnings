@@ -131,6 +131,9 @@ namespace GuardsEarnings_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<float?>("Payment")
+                        .HasColumnType("real");
+
                     b.Property<long?>("TargetId")
                         .HasColumnType("bigint");
 

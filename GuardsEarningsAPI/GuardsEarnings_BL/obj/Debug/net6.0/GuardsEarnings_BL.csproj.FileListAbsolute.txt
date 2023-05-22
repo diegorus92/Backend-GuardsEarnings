@@ -22,8 +22,6 @@ C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-Guar
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\obj\Debug\net6.0\refint\GuardsEarnings_BL.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\obj\Debug\net6.0\GuardsEarnings_BL.pdb
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\obj\Debug\net6.0\ref\GuardsEarnings_BL.dll
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\bin\Debug\net6.0\GuardsEarnings_BL.runtimeconfig.json
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\bin\Debug\net6.0\GuardsEarnings_DAL.dll
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\bin\Debug\net6.0\GuardsEarnings_DAL.pdb
 C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\obj\Debug\net6.0\GuardsEarnings_BL.csproj.CopyComplete
-C:\Diego\proyectos\Programación\Proyectos FULLSTACK\GuardsEarnings\Backend-GuardsEarnings\GuardsEarningsAPI\GuardsEarnings_BL\obj\Debug\net6.0\GuardsEarnings_BL.genruntimeconfig.cache
